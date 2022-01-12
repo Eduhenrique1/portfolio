@@ -15,6 +15,7 @@ body nav {
   max-width: 1170px;
   padding: 1.5rem 0;
   margin: 0 33%;
+  margin: 0 33% 4% 48%;
 }
 body nav-box {
   display: flex;
@@ -38,8 +39,9 @@ body nav ul a:hover {
   color: #fff;
 }
 body nav ul img {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 60px;
+  margin-left: -300px;
 }
 body nav ul li {
   margin: 0 1rem;
@@ -59,7 +61,6 @@ body header {
 body header .header-intro {
   width: 350px;
   height: 250px;
-  border: 1px solid white;
 }
 body header .header-intro .intro-4 {
   color: #FF611D;
@@ -67,6 +68,29 @@ body header .header-intro .intro-4 {
 body header .header-intro .intro-4 .intro-sp {
   height: 100%;
   max-width: 100vh;
+  margin-top: -40px;
+}
+body header .header-intro .intro-4 .intro-sp img {
+  width: 300px;
+  padding-left: 70px;
+}
+body header .btn-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .btn-intro button {
+  background-color: #FF611D;
+  height: 40px;
+  border-radius: 50px;
+  width: 73%;
+  border: none;
+  text-transform: uppercase;
+}
+body header .btn-intro button:hover {
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
