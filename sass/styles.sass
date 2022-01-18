@@ -79,6 +79,7 @@ body
 
               button
                   background-color: variables.$text-color
+                  color: variables.$primary-color
                   height: 40px
                   border-radius: 50px
                   width: 73%
@@ -86,11 +87,172 @@ body
                   text-transform: uppercase 
 
                   &:hover
-                      color: variables.$primary-color
+                      color: variables.$bg-color
                       transition: .4s
                       cursor: pointer
 
+    section
+        background-color: variables.$primary-color
+        margin-top: 7%
 
+        .section-intro
+            @include mixins.flex-center
+            width: 100%
+            padding-top: 10%
+
+            .h2-about
+                text-transform: uppercase
+                font-family: variables.$text
+                font-size: 28pt
+                color: variables.$text-color
+                -webkit-text-stroke: 1px black
+                
+                .section-intro
+                    height: 100%
+                    max-width:100vh
+                    margin-top: -25px    
+                    
+                    img 
+                        width: 220px
+                        padding-left: 95px
+        .about-box
+            @include mixins.flex-content
+
+
+        p
+            width: 400px
+            margin-top: 10%
+            margin-bottom: 10%
+            text-align: justify
+            font-family: variables.$text
+
+        .about-image
+                width: 300px
+                height: 350px
+                align-items: center
+                border: 1px solid black
+                border-radius: 50%
+
+                img
+                    width: 300px
+                    height: 300px
+                    padding-top: 18%
+                    
+    article
+        height: 700px
+        background-color: variables.$text-color
+
+        .article-projects
+            width: 100%
+            height: 100px
+
+            .project-h2
+                margin-left: 38%
+                padding-top: 10%
+                font-family: variables.$text
+                text-transform: uppercase
+                font-size: 28pt
+                -webkit-text-stroke: .3px white
+                
+                .section-intro
+                    height: 100%
+                    max-width:100vh
+                    margin-top: -25px    
+                    
+                    img 
+                        width: 220px
+                        padding-left: 95px
+        
+        .main-projects-box
+            @include mixins.container
+            @include mixins.flex-center
+            margin: 0 20%
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 0
+            margin-top:5%
+            
+
+            .projects-box
+                @include mixins.flex-center
+                background-color: variables.$bg-color
+                width: 31%
+                height: 200px
+                margin-bottom:5%
+                flex-direction: column
+                color: variables.$primary-color
+                
+               
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1)
+                    transition: 0.5s
+                    box-shadow: 0 15px 15px rgba(0,0,0,0.6)
+                
+                .p-box
+                    text-transform: uppercase
+                    font-size: 10pt
+                    font-family: variables.$text
+                
+
+
+
+
+                .box-btn
+                    background-color: variables.$primary-color
+                    color: variables.$bg-color
+                    height: 22px
+                    border-radius: 50px
+                    width: 66%
+                    border: none
+                    text-transform: capitalize
+                    margin-top: 15%
+
+                    &:hover
+                        cursor: pointer
+                        border: 1px solid variables.$primary-color
+                        background-color: variables.$bg-color
+                        color: variables.$primary-color
+                        transition: .3s
+
+                        
+                         
+                    
+
+    aside
+        height: 600px
+        width: 100%
+        background-color: variables.$bg-color
+
+        .aside-contacts
+            width: 100%
+            height: 200px
+            @include mixins.flex-center
+
+            .aside-intro
+                font-size: 28pt
+                font-family: variables.$text
+                text-transform: uppercase
+                color: variables.$text-color
+                font-weight: 300
+            
+                .section-intro
+                    height: 100%
+                    max-width:100vh
+                    margin-top: -25px    
+                    
+                    img 
+                        width: 220px
+                        padding-left: 95px
+        .aside-box
+            width: 500px
+            height: 300px
+            background-color: variables.$text-color
+            margin-left: 25%
+            
+
+
+                
 
  
                                  

@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+}
+body nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 33%;
+  margin: 0 33% 4% 48%;
+}
+body nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+body nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+body nav ul a {
+  color: #FF611D;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body nav ul a:hover {
+  color: #fff;
+}
+body nav ul img {
+  width: 100px;
+  height: 60px;
+  margin-left: -300px;
+}
+body nav ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #FF611D;
+}
+body header {
+  color: #fff;
+  font-family: "Share", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  padding: 4.5rem 0;
+  text-transform: uppercase;
+  margin: 0 33%;
+}
+body header .header-intro {
+  width: 350px;
+  height: 250px;
+}
+body header .header-intro .intro-4 {
+  color: #FF611D;
+}
+body header .header-intro .intro-4 .intro-sp {
+  height: 100%;
+  max-width: 100vh;
+  margin-top: -40px;
+}
+body header .header-intro .intro-4 .intro-sp img {
+  width: 300px;
+  padding-left: 70px;
+}
+body header .btn-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .btn-intro button {
+  background-color: #FF611D;
+  color: #fff;
+  height: 40px;
+  border-radius: 50px;
+  width: 73%;
+  border: none;
+  text-transform: uppercase;
+}
+body header .btn-intro button:hover {
+  color: #242424;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body section {
+  background-color: #fff;
+  margin-top: 7%;
+}
+body section .section-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10%;
+}
+body section .section-intro .h2-about {
+  text-transform: uppercase;
+  font-family: "Share", cursive;
+  font-size: 28pt;
+  color: #FF611D;
+  -webkit-text-stroke: 1px black;
+}
+body section .section-intro .h2-about .section-intro {
+  height: 100%;
+  max-width: 100vh;
+  margin-top: -25px;
+}
+body section .section-intro .h2-about .section-intro img {
+  width: 220px;
+  padding-left: 95px;
+}
+body section .about-text {
+  width: 300px;
+  margin-top: 10%;
+  margin-left: 10%;
+  text-align: justify;
+  font-family: "Share", cursive;
+}
+body section .about-image {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=styles.css%5D.map */
