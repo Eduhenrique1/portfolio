@@ -254,6 +254,22 @@ body aside .aside-box {
   height: 300px;
   background-color: #FF611D;
   margin-left: 25%;
+  padding-top: 40px;
+}
+body aside .aside-box .box-contact {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 15px 50px;
+  padding-left: 15px;
+}
+body aside .aside-box .box-contact img {
+  width: 35px;
+  height: 40px;
+}
+body aside .aside-box .box-contact p {
+  padding-top: 16px;
+  padding-left: 15px;
+  font-family: "Share", cursive;
 }
 
 /*# sourceMappingURL=styles.css.map */
