@@ -262,11 +262,41 @@ body
                     width: 35px
                     height: 40px
                 
-                p
-                    padding-top: 16px
-                    padding-left: 15px
-                    font-family: variables.$text
+                a
+                    text-decoration: none
                     
+                    p
+                        padding-top: 16px
+                        padding-left: 15px
+                        font-family: variables.$text
+                        color: variables.$bg-color
+                        text-transform: uppercase
+
+                    .sp-icon
+                        width: 350px
+                        border: 1px solid #000000
+                        margin-left: 4%
+    
+    footer
+        width: 100%
+        height: 70px
+        
+
+        .footer-box
+            @include mixins.flex-center
+            align-items: center
+            
+            .box-registred
+                color: variables.$primary-color
+                font-family: variables.$text
+                font-size: 12pt
+                margin-top: 4%
+
+
+                        
+                            
+
+
 
 
             
