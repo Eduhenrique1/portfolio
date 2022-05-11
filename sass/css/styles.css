@@ -6,38 +6,27 @@
 
 body {
   background-color: #242424;
-}
-@media screen and (max-width: 800px) {
-  body header {
-    background-color: #FF611D;
-    width: 100%;
-    max-height: 90%;
-  }
-  body header nav {
-    background-color: #242424;
-  }
+  font-family: "Share";
 }
 body header {
   color: #fff;
-  font-family: "Share", cursive;
+  font-family: "Share";
   padding: 1.5rem 0;
   text-transform: uppercase;
+  margin-bottom: 10%;
 }
 body header nav {
-  width: 100%;
-}
-@media screen and (max-width: 800px) {
-  body header nav img {
-    display: none;
-  }
+  width: 90%;
+  border: 1px solid #FF611D;
+  margin: 0 auto;
 }
 body header nav ul {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   list-style: none;
+  justify-content: space-around;
 }
 body header nav ul a {
   color: #FF611D;
@@ -51,64 +40,72 @@ body header nav ul a:hover {
 }
 body header nav ul .img-logo {
   width: 100px;
-  height: auto;
-  margin-right: 250px;
+  margin-right: auto;
 }
 body header nav ul .img-logo img {
   width: 100%;
 }
-body header nav li {
+body header nav .box-li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+body header nav .box-li li {
   margin: 0 1rem;
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #FF611D;
+  margin-left: 30px;
 }
 body header .header-intro {
   width: 100%;
-  height: 350px;
-  margin-top: 10%;
-  margin-left: 35%;
-  font-size: 1.8em;
-  letter-spacing: 0.3rem;
+  height: 450px;
+  margin-top: 6%;
+  letter-spacing: 0.1rem;
 }
-body header .header-intro .intro-4 {
-  color: #FF611D;
-}
-body header .header-intro .intro-4 .intro-sp {
+body header .header-intro .content {
+  width: 50%;
   height: 100%;
-  max-width: 100vh;
-  margin-top: -40px;
+  border: 1px solid #FF611D;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 7%;
 }
-body header .header-intro .intro-4 .intro-sp img {
-  width: 300px;
-  padding-left: 70px;
+body header .header-intro .content .box {
+  width: 50%;
+  margin: 0 auto;
 }
-body header .btn-intro {
+body header .header-intro .content .box .intro {
+  font-family: "Inter", cursive;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 6% 0px 6% 0;
+}
+body header .header-intro .content .box .intro-4 {
+  color: #FF611D;
+  font-family: "Inter", cursive;
+  font-size: 2em;
+}
+body header .header-intro .content .box .btn-intro {
+  margin-top: 30%;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-body header .btn-intro button {
+body header .header-intro .content .box .btn-intro button {
   background-color: #FF611D;
   color: #fff;
-  height: 40px;
-  border-radius: 50px;
-  width: 25%;
+  height: 48px;
+  border-radius: 18.84px;
+  width: 65%;
+  font-size: 10px;
   border: none;
   text-transform: uppercase;
 }
-body header .btn-intro button:hover {
+body header .header-intro .content .box .btn-intro button:hover {
   color: #242424;
-  transition: 0.4s;
+  transition: 0.3s;
   cursor: pointer;
-}
-@media query and (max-width: 800px) {
-  body header header {
-    display: none;
-  }
-  body header header nav {
-    display: none;
-  }
 }
 body section {
   background-color: #fff;
@@ -117,7 +114,6 @@ body section {
 body section .section-intro {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   padding-top: 10%;
 }
@@ -125,17 +121,14 @@ body section .section-intro .h2-about {
   text-transform: uppercase;
   font-family: "Share", cursive;
   font-size: 28pt;
-  color: #FF611D;
-  -webkit-text-stroke: 1px black;
+  color: #242424;
 }
-body section .section-intro .h2-about .section-intro {
-  height: 100%;
-  max-width: 100vh;
+body section .section-intro .line-about {
+  height: 2px;
+  width: 30%;
+  background-color: black;
+  text-align: center;
   margin-top: -25px;
-}
-body section .section-intro .h2-about .section-intro img {
-  width: 220px;
-  padding-left: 95px;
 }
 body section .about-box {
   display: flex;
@@ -147,7 +140,7 @@ body section .about-box .about-text {
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: justify;
-  font-family: "Share", cursive;
+  font-family: "Inter", cursive;
 }
 body section .about-image {
   width: 70%;
@@ -155,7 +148,6 @@ body section .about-image {
   align-items: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: flex-end;
   border: 1px solid black;
   padding-top: -10%;
@@ -167,162 +159,6 @@ body section .about-image .img-box {
   border: 1px solid black;
   border-radius: 50%;
   margin-left: 10px;
-}
-body section .about-image img {
-  width: 100px;
-  height: 90px;
-}
-body article {
-  height: 700px;
-  background-color: #FF611D;
-}
-body article .article-projects {
-  width: 100%;
-  height: 100px;
-}
-body article .article-projects .project-h2 {
-  margin-left: 38%;
-  padding-top: 10%;
-  font-family: "Share", cursive;
-  text-transform: uppercase;
-  font-size: 28pt;
-  -webkit-text-stroke: 0.3px white;
-}
-body article .article-projects .project-h2 .section-intro {
-  height: 100%;
-  max-width: 100vh;
-  margin-top: -25px;
-}
-body article .article-projects .project-h2 .section-intro img {
-  width: 220px;
-  padding-left: 95px;
-}
-body article .main-projects-box {
-  max-width: 980px;
-  padding: 1.5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 20%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin-top: 5%;
-}
-body article .main-projects-box .projects-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #242424;
-  width: 31%;
-  height: 200px;
-  margin-bottom: 5%;
-  flex-direction: column;
-  color: #fff;
-}
-body article .main-projects-box .projects-box:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
-}
-body article .main-projects-box .projects-box .p-box {
-  text-transform: uppercase;
-  font-size: 10pt;
-  font-family: "Share", cursive;
-}
-body article .main-projects-box .projects-box .box-btn {
-  background-color: #fff;
-  color: #242424;
-  height: 22px;
-  border-radius: 50px;
-  width: 66%;
-  border: none;
-  text-transform: capitalize;
-  margin-top: 15%;
-}
-body article .main-projects-box .projects-box .box-btn:hover {
-  cursor: pointer;
-  border: 1px solid #fff;
-  background-color: #242424;
-  color: #fff;
-  transition: 0.3s;
-}
-body aside {
-  height: 600px;
-  width: 100%;
-  background-color: #242424;
-}
-body aside .aside-contacts {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body aside .aside-contacts .aside-intro {
-  font-size: 28pt;
-  font-family: "Share", cursive;
-  text-transform: uppercase;
-  color: #FF611D;
-  font-weight: 300;
-}
-body aside .aside-contacts .aside-intro .section-intro {
-  height: 100%;
-  max-width: 100vh;
-  margin-top: -25px;
-}
-body aside .aside-contacts .aside-intro .section-intro img {
-  width: 220px;
-  padding-left: 95px;
-}
-body aside .aside-box {
-  width: 500px;
-  height: 300px;
-  background-color: #FF611D;
-  margin-left: 25%;
-  padding-top: 40px;
-}
-body aside .aside-box .box-contact {
-  display: flex;
-  flex-direction: row;
-  margin: 0 50px 15px 50px;
-  padding-left: 15px;
-}
-body aside .aside-box .box-contact img {
-  width: 35px;
-  height: 40px;
-}
-body aside .aside-box .box-contact a {
-  text-decoration: none;
-}
-body aside .aside-box .box-contact a p {
-  padding-top: 16px;
-  padding-left: 15px;
-  font-family: "Share", cursive;
-  color: #242424;
-  text-transform: uppercase;
-}
-body aside .aside-box .box-contact a .sp-icon {
-  width: 350px;
-  border: 1px solid #000000;
-  margin-left: 4%;
-}
-body footer {
-  width: 100%;
-  height: 70px;
-}
-body footer .footer-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-body footer .footer-box .box-registred {
-  color: #fff;
-  font-family: "Share", cursive;
-  font-size: 12pt;
-  margin-top: 4%;
 }
 
 /*# sourceMappingURL=styles.css.map */
