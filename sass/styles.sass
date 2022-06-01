@@ -124,135 +124,159 @@ body
         margin-top: 7%
 
         .section-intro
-            @include mixins.flex-center
+            text-align: center
             width: 100%
             padding-top: 10%
+
 
             .h2-about
                 text-transform: uppercase
                 font-family: variables.$textS
                 font-size: 28pt
                 color: variables.$bg-color
-                
-                
-            .line-about
-                @include mixins.line
-                margin-top: -25px    
-                    
+
+                &::before
+                    content: ""
+                    position: absolute
+                    border-bottom: 1px solid #27461f
+                    width: 16%
+                    height: 5%
+
+    
         .about-box
             @include mixins.flex-content
 
             .about-text
-                width: 400px
+                width: 600px
                 margin-top: 10%
                 margin-bottom: 10%
                 text-align: justify
                 font-family: variables.$textI
 
 
-        .about-image
-                width: 70%
-                height: 132px
-                align-items: center
-                @include mixins.flex-center
-                justify-content: flex-end
+        .about-skills
+            text-transform: uppercase
+            font-family: variables.$textS
+            font-size: 12pt
+            color: variables.$bg-color
+
+            .text
+                text-align: center
+                margin-bottom: 10%
+
+                &::before
+                    content: ""
+                    position: absolute
+                    border-bottom: 1.5px solid #27461f
+                    width: 16%
+                    height: 2%
+            
+            .skills
+                width: 100x
+                text-align: center
                 border: 1px solid black
-                padding-top: -10%
                 
-               
-                .img-box
-                    width: 100px
-                    height: 100px
-                    align-items: center
-                    border: 1px solid black
-                    border-radius: 50%
-                    margin-left: 10px
-                
-                    
-                    
-    // article
-    //     height: 700px
-    //     background-color: variables.$text-color
+                ul
+                    @include mixins.flex-center
+                    text-decoration: none
 
-    //     .article-projects
-    //         width: 100%
-    //         height: 100px
+                    li
+                        text-decoration: none
+                        margin: 10px 10px 
+
+                        img
+                            width: 100px
+                            width: 112.26px
+                            
+
+
+
+                        
+                    
+                    
+    article
+        height: 700px
+        background-color: variables.$text-color
+
+        .article-projects
+            width: 100%
+            height: 100px
            
            
 
-    //         .project-h2
-    //             margin-left: 38%
-    //             padding-top: 10%
-    //             font-family: variables.$text
-    //             text-transform: uppercase
-    //             font-size: 28pt
-    //             -webkit-text-stroke: .3px white
+            .project-h2
+                margin-left: 38%
+                padding-top: 10%
+                font-family: variables.$textI
+                text-transform: uppercase
+                font-size: 28pt
+                -webkit-text-stroke: .3px white
                 
-    //             .section-intro
-    //                 height: 100%
-    //                 max-width:100vh
-    //                 margin-top: -25px    
+                .section-intro
+                    height: 100%
+                    max-width:100vh
+                    margin-top: -25px    
                     
-    //                 img 
-    //                     width: 220px
-    //                     padding-left: 95px
+                    img 
+                        width: 220px
+                        padding-left: 95px
         
-    //     .main-projects-box
-    //         @include mixins.container
-    //         @include mixins.flex-center
-    //         margin: 0 20%
-    //         flex-wrap: wrap
-    //         justify-content: space-between
-    //         padding: 0
-    //         margin-top:5%
+        .main-projects-box
+            @include mixins.container
+            @include mixins.flex-center
+            margin: 0 20%
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 0
+            margin-top:5%
 
             
             
             
 
-    //         .projects-box
-    //             @include mixins.flex-center
-    //             background-color: variables.$bg-color
-    //             width: 31%
-    //             height: 200px
-    //             margin-bottom:5%
-    //             flex-direction: column
-    //             color: variables.$primary-color
+            .projects-box
+                @include mixins.flex-center
+                background-color: variables.$bg-color
+                width: 31%
+                height: 200px
+                margin-bottom:5%
+                flex-direction: column
+                color: variables.$primary-color
 
                  
                 
                
-    //             &:hover
-    //                 cursor: pointer
-    //                 transform: scale(1.1)
-    //                 transition: 0.5s
-    //                 box-shadow: 0 15px 15px rgba(0,0,0,0.6)
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1)
+                    transition: 0.5s
+                    box-shadow: 0 15px 15px rgba(0,0,0,0.6)
                 
-    //             .p-box
-    //                 text-transform: uppercase
-    //                 font-size: 10pt
-    //                 font-family: variables.$text
+                .p-box
+                    text-transform: uppercase
+                    font-size: 10pt
+                    font-family: variables.$textS
                 
 
 
 
 
-    //             .box-btn
-    //                 background-color: variables.$primary-color
-    //                 color: variables.$bg-color
-    //                 height: 22px
-    //                 border-radius: 50px
-    //                 width: 66%
-    //                 border: none
-    //                 text-transform: capitalize
-    //                 margin-top: 15%
+                .box-btn
+                    background-color: variables.$primary-color
+                    color: variables.$bg-color
+                    height: 22px
+                    border-radius: 50px
+                    width: 66%
+                    border: none
+                    text-transform: capitalize
+                    margin-top: 15%
 
-    //                 &:hover
-    //                     cursor: pointer
-    //                     border: 1px solid variables.$primary-color
-    //                     background-color: variables.$bg-color
-    //                     color: variables.$primary-color
-    //                     transition: .3s
+                    &:hover
+                        cursor: pointer
+                        border: 1px solid variables.$primary-color
+                        background-color: variables.$bg-color
+                        color: variables.$primary-color
+                        transition: .3s
 
     // aside
     //     height: 600px

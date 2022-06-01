@@ -112,8 +112,7 @@ body section {
   margin-top: 7%;
 }
 body section .section-intro {
-  display: flex;
-  align-items: center;
+  text-align: center;
   width: 100%;
   padding-top: 10%;
 }
@@ -123,12 +122,12 @@ body section .section-intro .h2-about {
   font-size: 28pt;
   color: #242424;
 }
-body section .section-intro .line-about {
-  height: 2px;
-  width: 30%;
-  background-color: black;
-  text-align: center;
-  margin-top: -25px;
+body section .section-intro .h2-about::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #27461f;
+  width: 16%;
+  height: 5%;
 }
 body section .about-box {
   display: flex;
@@ -136,29 +135,120 @@ body section .about-box {
   align-items: center;
 }
 body section .about-box .about-text {
-  width: 400px;
+  width: 600px;
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: justify;
   font-family: "Inter", cursive;
 }
-body section .about-image {
-  width: 70%;
-  height: 132px;
-  align-items: center;
+body section .about-skills {
+  text-transform: uppercase;
+  font-family: "Share", cursive;
+  font-size: 12pt;
+  color: #242424;
+}
+body section .about-skills .text {
+  text-align: center;
+  margin-bottom: 10%;
+}
+body section .about-skills .text::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1.5px solid #27461f;
+  width: 16%;
+  height: 2%;
+}
+body section .about-skills .skills {
+  width: 100x;
+  text-align: center;
+  border: 1px solid black;
+}
+body section .about-skills .skills ul {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  border: 1px solid black;
-  padding-top: -10%;
+  text-decoration: none;
 }
-body section .about-image .img-box {
+body section .about-skills .skills ul li {
+  text-decoration: none;
+  margin: 10px 10px;
+}
+body section .about-skills .skills ul li img {
   width: 100px;
+  width: 112.26px;
+}
+body article {
+  height: 700px;
+  background-color: #FF611D;
+}
+body article .article-projects {
+  width: 100%;
   height: 100px;
+}
+body article .article-projects .project-h2 {
+  margin-left: 38%;
+  padding-top: 10%;
+  font-family: "Inter", cursive;
+  text-transform: uppercase;
+  font-size: 28pt;
+  -webkit-text-stroke: 0.3px white;
+}
+body article .article-projects .project-h2 .section-intro {
+  height: 100%;
+  max-width: 100vh;
+  margin-top: -25px;
+}
+body article .article-projects .project-h2 .section-intro img {
+  width: 220px;
+  padding-left: 95px;
+}
+body article .main-projects-box {
+  max-width: 980px;
+  padding: 1.5rem 0;
+  display: flex;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 50%;
-  margin-left: 10px;
+  margin: 0 20%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 5%;
+}
+body article .main-projects-box .projects-box {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  width: 31%;
+  height: 200px;
+  margin-bottom: 5%;
+  flex-direction: column;
+  color: #fff;
+}
+body article .main-projects-box .projects-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+}
+body article .main-projects-box .projects-box .p-box {
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-family: "Share", cursive;
+}
+body article .main-projects-box .projects-box .box-btn {
+  background-color: #fff;
+  color: #242424;
+  height: 22px;
+  border-radius: 50px;
+  width: 66%;
+  border: none;
+  text-transform: capitalize;
+  margin-top: 15%;
+}
+body article .main-projects-box .projects-box .box-btn:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #242424;
+  color: #fff;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map */
