@@ -1,0 +1,90 @@
+@use '../globals/mixins' as m
+@use '../globals/variables' as v
+@use '../globals/_colors' as cor
+
+
+.content-skills
+    width: 100%
+    height: 100vh
+    display: block
+    margin-bottom: 100px
+
+    .skills-tittle
+        width: 193px
+        text-align: center
+        margin: 0 auto 125px
+        padding-top: 50px
+
+        .subtittle
+            color: cor.$botao
+            font-size: v.$fz-subtittle
+
+            &::before
+                content: ''
+                width: 100%
+                display: block
+                position: absolute
+                height: 205px
+                background-image: url('../../../assets/divisor-skills.svg')
+                background-position: contain
+                background-repeat: no-repeat
+                left: 0
+                margin-top: -100px
+                z-index: -1
+                opacity: .8
+
+        h2
+            font-size: 28px
+            font-weight: 700
+            position: relative
+            
+
+            &::after
+                content: ''
+                width: 100px
+                height: 1px
+                display: block
+                position: absolute
+                background-color: cor.$botao
+                left: 40px
+                bottom: -5px
+    
+        .subtittle-sk
+                color: cor.$text
+                width: 100%
+                margin-top: 100px
+                display: block
+                font-weight: 600
+
+    .box-card
+        width: 32em
+        display: flex
+        gap: 36px
+        flex-wrap: wrap
+        @include m.mg-centro
+        margin-bottom: 125px
+
+        .card
+            width: 100px
+            height: 110px
+            flex-direction: column
+            @include m.justify-center
+            padding: 11px
+            @include m.borda-redonda(10px, cor.$botao)
+            transition-duration: .4s
+            filter: grayscale(.3)
+
+
+            &:hover
+                cursor: pointer
+                transform: scale(1.1)
+                border-color: white 
+                filter: grayscale(0)
+                filter: saturate(100%)
+            img
+                width: 58px
+                padding-bottom: 10px
+            p
+                font-size: 15px
+
+

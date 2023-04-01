@@ -1,0 +1,40 @@
+@use '../../globals/_variables' as v
+@use '../../globals/_mixins' as m
+@use '../../globals/_colors' as cor
+@use '../../globals/funcoes' as f
+
+
+
+
+@media screen and ( max-width: 1024px)
+
+
+    
+@media screen and ( max-width: 768px)
+
+
+    .box-card
+        width: 22em !important
+
+        .card
+            width:90px !important
+            height:100px !important
+            border-radius: 10px !important
+
+            img
+              width: 54px !important
+
+@media screen and ( max-width: 480px )
+    .box-card
+        width: 21em !important
+        gap: 30px !important
+
+@media screen and ( max-width: 370px )
+    .content-skills
+        width: 23em !important
+        height: 100% !important
+
+        .skills-tittle
+            .subtittle
+                &::before
+                    width: 371px !important

@@ -1,0 +1,79 @@
+@use '../globals/mixins' as m
+@use '../globals/variables' as v
+@use '../globals/_colors' as cor
+
+    
+.service-content
+    height: 100%
+    position: relative
+
+    &::after
+            content: ''
+            width: 267px
+            display: block
+            position: absolute
+            height: 100%
+            background-image: url('../../../assets/before-projects.svg')
+            background-size: contain
+            background-repeat: no-repeat
+            left: -30px
+            top: 440px
+            z-index: -1
+            opacity: .8
+
+    .service-tittle
+        @include m.text-center
+        
+        .subtittle
+            color: cor.$botao
+            font-size: v.$fz-subtittle
+
+            &::before
+                content: ''
+                width: 100%
+                display: block
+                position: absolute
+                height: 205px
+                background-image: url('../../../assets/divisor-services.svg')
+                background-position: contain
+                background-repeat: no-repeat
+                left: 0
+                margin-top: -100px
+                z-index: -1
+                opacity: .8
+        h2
+            @include m.linha-h2(48px)
+
+
+    .service-box
+        display: flex
+        width: 82%
+        height: auto
+        gap: 14px
+        flex-wrap: wrap
+        @include m.mg-centro
+        @include m.justify-around
+
+        .card-service
+            background-color: cor.$card
+            width: 250px
+            height: 300px
+            padding: 30px 5px 
+            text-align: center
+            position: relative
+            border-bottom: 3px solid cor.$botao
+            border-radius: 0 0 14px
+
+            p
+                font-size: v.$fz-card
+                font-weight: 600
+                margin: 25px 21px 30px
+            
+
+            .text
+                font-size: 12px
+                display: block
+                bottom: 54px
+                position: absolute
+                text-align: center
+                padding: 0 6px

@@ -1,0 +1,102 @@
+@use '../globals/mixins' as m
+@use '../globals/variables' as v
+@use '../globals/_colors' as cor
+
+.project-content
+    height: 100%
+    padding-bottom: 30px
+    position: relative
+
+    &::after
+        content: ''
+        background-image: url('../../../assets/after-project.svg')
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 344.88px
+        height: 52%
+        display: block
+        position: absolute
+        bottom: 0
+        right: 0
+        opacity: .3
+        z-index: -1
+
+
+    .project-tittle
+        @include m.text-center
+        margin: 50px auto 120px
+
+        
+        .subtittle
+            color: cor.$botao
+            font-size: v.$fz-subtittle
+
+        h2
+            @include m.linha-h2(48px)
+    
+    .project-box
+        width: 90%
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+        margin: 0 auto
+        justify-content: space-around
+
+        .card-projects
+            width: 300px
+            height: 225px
+            position: relative
+
+            &::before
+                content: ''
+                width: 100%
+                height: 100px
+                background-color: #121212
+                position: absolute
+                bottom: 0
+                display: block
+                opacity: .5
+                z-index: 1
+
+            &::hover
+                width: 200px
+                background-color: white
+                cursor: pointer
+
+            img
+                width: 100%
+                filter: brightness(0.7)
+               
+
+            .project-content-card
+                position: absolute
+                width: 100%
+                bottom: 25px
+                left: 0
+                text-align: center
+                z-index: 2
+
+                p
+                    font-weight: 600
+                    font-size: v.$fz-card
+                    padding-bottom: 10px
+                    
+                .icon
+                    width: 30px
+                    display: inline-flex
+                    transition-duration: .3s
+                    border-radius: 90%
+                    margin-left: 5px
+
+                    &:hover
+                        transform: scale(1.3)
+                        background-color: white
+                        border-radius: 90%
+                    
+                    .img-icon
+                        width: 30px
+
+
+
+              

@@ -1,0 +1,62 @@
+@use '../globals/mixins' as m
+@use '../globals/variables' as v
+@use '../globals/_colors' as cor
+
+.nav-menu
+    @include m.reset-list
+    font-size: v.$fz-nav
+    display: flex
+    gap: 0.5rem
+
+    .menu-item
+        @include m.mg-lista(1px 10px 1px 10px)
+        
+        a 
+            color: cor.$text
+            text-decoration: none
+                
+            &:hover
+                color: cor.$botao
+                transition-duration: .3s
+
+                
+
+.icons
+    display: flex
+    gap: .5rem
+
+    .sociais
+        padding: 4px
+        border: 1px solid white
+        border-radius: 50%
+        background-color: white
+        color: #242424
+        opacity: .6
+        transition-duration: .4s
+
+        &:hover
+            background-color: white
+            color: cor.$botao
+            opacity: 10
+            transform: scale(1.1)
+
+        .fa-brands
+            width: 25px
+            height: 26px
+            position: relative
+            left: 5px
+            top: 5px
+
+    
+.toggle-menu
+    display: none
+    cursor: pointer
+
+    .toggle-menu-resp
+            display: block
+            width: 23px
+            height: 3px
+            margin: 5px auto
+            -webkit-transition: all 0.3s ease
+            transition: all .3s ease
+            background-color: white

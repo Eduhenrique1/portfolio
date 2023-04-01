@@ -1,0 +1,140 @@
+@use '../globals/mixins' as m
+@use '../globals/variables' as v
+@use '../globals/_colors' as cor
+    
+.contact-content
+    width: 100%
+    height: 100vh
+
+    .contact-tittle
+        @include m.text-center
+        margin: 50px auto 120px
+
+        
+        .subtittle
+            color: cor.$botao
+            font-size: v.$fz-subtittle
+
+        h2
+            @include m.linha-h2(48px)
+
+    .contact-box
+        display: flex
+        width: 90%
+        justify-content: space-around
+        gap: 30px
+        @include m.mg-centro
+
+        .box-icons
+            width: 500px
+            height: 400px
+            position: relative
+
+            .icons-sociais-contact
+                width: 80%
+                height: 53px
+                position: relative
+                display: flex
+                justify-content: space-around
+                @include m.mg-centro
+                margin-top: 85px
+
+                img
+                    transition-duration: .4s
+                    &:hover
+                        transform: scale(1.2)
+
+                span
+                    width: 63px
+                    height: 3px
+                    background-color: cor.$text
+                    margin-top: 25px
+
+            .buttons
+                position: absolute
+                bottom: 0
+                left: 30px
+
+                button
+                    width: 120px
+                    height: 36px
+                    background-color: cor.$botao
+                    color: cor.$text
+                    @include m.borda-redonda(5px, transparent)
+                    margin: 10px
+                    transition-duration: .3s
+                    font-size: v.$fz-subtittle
+                    text-align: center
+
+                    &:hover
+                        background-color: cor.$text
+                        color: cor.$card
+                        
+        .mail
+            width: 300px
+            height: 400px
+            background-color: cor.$card
+            @include m.borda-redonda(10px, transparent)
+
+            form
+                display: flex
+                flex-direction: column
+                width: 90%
+                margin: 20px auto
+                position: relative
+
+                .input-box
+                    width: 90%
+                    height: 50px
+                    border-bottom: 2px solid cor.$botao
+                    position: relative
+                    margin: 15px auto
+
+                    input:focus,
+                    input:valid 
+                        & ~ label 
+                            top: -3px
+                            font-size: 12px
+                            font-weight: 700
+
+                    
+
+                    label
+                        position: absolute
+                        top: 50%
+                        left: 5px
+                        transform: translateY(-30%)
+                        font-size: 1em
+                        font-weight: 500
+                        pointer-events: none
+                        transition: .5s
+                        color: cor.$text
+                        font-weight: 300
+
+                    
+
+                    input
+                        height: 100%
+                        width: 100%
+                        background: transparent
+                        border: none
+                        outline: none
+                        color: cor.$text
+
+                        
+                .btn-contact
+                    width: 110px
+                    height: 34px
+                    position: absolute
+                    right: 15px
+                    bottom: -75px
+                    @include m.borda-redonda(15px, transparent)
+                    background-color: cor.$botao 
+                    color: cor.$text
+                    transition-duration: .3s
+
+                    &:hover
+                        background-color: cor.$text
+                        color: cor.$card
+
+                           

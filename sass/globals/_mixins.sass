@@ -1,0 +1,84 @@
+@use 'variables' as v
+@use 'colors' as cor
+
+    
+// ------------------------listas e navbars----------------------
+
+@mixin reset-list 
+    list-style: none
+    text-decoration: none
+
+@mixin navbar-list
+    @include reset-list
+    display: flex
+    justify-content: space-around
+
+
+//  --------------------flexbox no geral-------------------------
+@mixin justify-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin justify-around
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+
+// ----------------------------- margens-------------------------------------- 
+
+//-------------------------MARGENS---------------------------------
+@mixin mg-lista($mg-lista: 10px 0 0 0)
+    margin: $mg-lista
+
+@mixin mg-normal($mg-normal: 20px)
+    margin: $mg-normal
+
+@mixin mg-box($mg-box: 40px)
+    margin: $mg-box
+
+@mixin icon($largura:27px, $altura:27px)
+    width: $largura
+    height: $altura
+
+@mixin mg-centro
+    margin: 0 auto
+
+@mixin mg-bot($bot)
+    margin-bottom: $bot    
+    
+//-------------------------BORDAS---------------------------------
+
+@mixin borda-redonda($border-radius:50%,  $cor: #fff)
+    border: 1px solid
+    border-color: $cor
+    border-radius: $border-radius
+
+// @mixin borda-opacidade($borda: content, $cor: #fff)
+//     border: 1px solid
+//     border-color: $cor
+
+@mixin text-center()
+        width: 193px
+        text-align: center
+        margin: 0 auto 125px
+        padding-top: 50px
+
+
+@mixin linha-h2($left:40px, $bottom:-5px)
+
+    font-size: 28px
+    font-weight: 700
+    position: relative
+        
+
+    &::after
+        content: ''
+        width: 100px
+        height: 1px
+        display: block
+        position: absolute
+        background-color: cor.$botao
+        left: $left
+        bottom: $bottom
